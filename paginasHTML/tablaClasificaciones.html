@@ -12,7 +12,7 @@
     <header>
         <nav>
             <div class=logo>
-                <a href="../paginaPrincipal.html">
+             <a href="../index.html">
                     <img src="../logo/logoDorado.png" alt="error">
                 </a>
             </div>
@@ -28,9 +28,19 @@
 
     <main>
 
-        <h1>Resultados de Partidos</h1>
+        <div class=titulo>
+            <h1>Tabla de Posiciones</h1>
+        </div>
 
-        <div  id="partidosPrincipal">
+        <div class=contenedorTabla>
+
+            <div class="tabla-grid" id="tablaClasificacion">
+            </div>
+
+            <div class="maximoGoleador" id="listaGoleadores">
+                <div class="cargando">Cargando goleadoras...</div>
+            </div>
+            
         </div>
 
     </main>
@@ -41,24 +51,20 @@
             <a href="../paginasHTML/paginaPrincipal.html">
                 <img src="../logo/logoDorado.png" alt="error">
             </a>
-
         </div>
 
         <h2>Football <br>Manager</h2>
-
         <div class="footerLegales">
-            <a >Aviso Legal</a>
-            <a >Términos y Condiciones</a>
+            <a>Aviso Legal</a>
+            <a>Términos y Condiciones</a>
         </div>
-
         <div class=footerRedes>
             <img src="../logo/ig.png" alt="instagram">
             <img src="../logo/fb.png" alt="facebook">
         </div>
 
     </footer>
-    
-    <script src="../archivosJavaScript/disputasVS.js"></script>
+    <script src="../archivosJavaScript/clasificacion.js"></script>
 </body>
 
 </html>
