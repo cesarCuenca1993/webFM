@@ -1,0 +1,122 @@
+[
+    {
+        "pos": 1,
+        "nom": "FC Barcelona",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_fcb.png",
+        "pj": 27,
+        "pg": 21,
+        "pe": 2,
+        "pp": 4,
+        "pts": 65
+    },
+    {
+        "pos": 2,
+        "nom": "Real Madrid CF",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_madrid.png",
+        "pj": 27,
+        "pg": 19,
+        "pe": 5,
+        "pp": 3,
+        "pts": 62
+    },
+    {
+        "pos": 3,
+        "nom": "Atlético de Madrid",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_atmadrid.png",
+        "pj": 27,
+        "pg": 16,
+        "pe": 7,
+        "pp": 4,
+        "pts": 55
+    },
+    {
+        "pos": 4,
+        "nom": "Real Sociedad",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_sociedad.png",
+        "pj": 27,
+        "pg": 14,
+        "pe": 6,
+        "pp": 7,
+        "pts": 48
+    },
+    {
+        "pos": 5,
+        "nom": "Levante UD",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_levante.png",
+        "pj": 27,
+        "pg": 13,
+        "pe": 5,
+        "pp": 9,
+        "pts": 44
+    },
+    {
+        "pos": 6,
+        "nom": "Athletic Club",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_athleticclub.png",
+        "pj": 27,
+        "pg": 12,
+        "pe": 5,
+        "pp": 10,
+        "pts": 41
+    },
+    {
+        "pos": 7,
+        "nom": "Sevilla FC",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_sevilla.png",
+        "pj": 27,
+        "pg": 10,
+        "pe": 8,
+        "pp": 9,
+        "pts": 38
+    },
+    {
+        "pos": 8,
+        "nom": "Valencia CF",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_valencia.png",
+        "pj": 27,
+        "pg": 9,
+        "pe": 6,
+        "pp": 12,
+        "pts": 33
+    },
+    {
+        "pos": 9,
+        "nom": "Real Betis",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_betis.png",
+        "pj": 27,
+        "pg": 8,
+        "pe": 6,
+        "pp": 13,
+        "pts": 30
+    },
+    {
+        "pos": 10,
+        "nom": "RCD Espanyol",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_espanyol.png",
+        "pj": 27,
+        "pg": 7,
+        "pe": 5,
+        "pp": 15,
+        "pts": 26
+    },
+    {
+        "pos": 11,
+        "nom": "Granada CF",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_granada.png",
+        "pj": 27,
+        "pg": 6,
+        "pe": 4,
+        "pp": 17,
+        "pts": 22
+    },
+    {
+        "pos": 12,
+        "nom": "SD Eibar",
+        "escut": "../FM_LligaFemenina/images/logo_equip/logo_eibar.png",
+        "pj": 27,
+        "pg": 5,
+        "pe": 4,
+        "pp": 18,
+        "pts": 19
+    }
+]

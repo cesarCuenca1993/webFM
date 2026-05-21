@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="../estilosConCSS/cssPrincipal.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class=logo>
+                <a href="../paginaPrincipal.html">
+                    <img src="../logo/logoDorado.png" alt="error">
+                </a>
+            </div>
+            <h2>Football <br>Manager</h2>
+            <div class=enlaces>
+                <h4><a href="../paginasHTML/equipos.html">Equipos</a></h4>
+                <h4><a href="../paginasHTML/partidosDisputados.html">Partidos Disputados</a></h4>
+                <h4><a href="../paginasHTML/tablaClasificaciones.html">Tabla Clasificación</a></h4>
+                <h4><a href="../paginasHTML/Formulario.html">Formulario</a></h4>
+            </div>
+        </nav>
+    </header>
+
+    <header class=tituloFormulario>
+        <h1>Formulario de Alta Profesional</h1>
+    </header>
+
+    <main>
+
+        <form action="" method="">
+
+            <div class="contenedorFormulario">
+                <div class="ingresarFotoContenedor">
+                    <label><b>Fotografía Oficial</b></label>
+
+                    <label class="cuadroFoto" id="drop-zone">
+
+                        <div id="default-content">
+                            <img src="logo\camara.png" alt="Icono Foto">
+                            <span>Subir imagen</span>
+                            <span>(JPG, PNG máx. 5MB)</span>
+                        </div>
+
+                        <img class="imagenMostrada" id="image-preview" src="">
+
+                        <input type="file" id="foto-input" accept="image/*">
+                    </label>
+
+                    <p class="tipoFotoPreferente">
+                        * La fotografía debe ser de frente, con fondo neutro y uniforme del equipo si ya dispone de él.
+                    </p>
+                </div>
+                <div class="contenedorDatos">
+                    <h4>Información Completa</h4>
+                    <div class="nombre">
+                        <label for="txtNombre"><b>Nombre</b></label>
+                        <input type="text" name="txtNombre" id="txtNombre" placeholder="Introduzca su nombre"
+                            autocomplete="off" required>
+                    </div>
+                    <div class="nombre">
+                        <label for="txtApellidos"><b>Apellidos</b></label>
+                        <input type="text" name="txtApellidos" id="txtApellidos" placeholder="Introduzca su apellido"
+                            autocomplete="off" required>
+                    </div>
+
+                    <div class="nombre">
+                        <label for="numberAltura"><b>Edad</b></label>
+                        <input type="number" name="numberAltura" id="numberAltura" min="10" max="85"
+                            placeholder="Introduzca su edad" autocomplete="off" required>
+                    </div>
+
+                    <div class="nombre">
+                        <label for="numberAltura"><b>Altura (cm)</b></label>
+                        <input type="number" name="numberAltura" id="numberAltura" min="140" max="250"
+                            placeholder="Introduzca su altura" autocomplete="off" required>
+                    </div>
+
+                    <div class="nombre">
+                        <label for="numberPeso"><b>Peso (kg)</b></label>
+                        <input type="number" name="numberPeso" id="numberPeso" min="40" max="150"
+                            placeholder="Introduzca su peso" autocomplete="off" required>
+                    </div>
+                    <div class="nombre">
+                        <label for="dateNacimiento"><b>Fecha Nacimiento</b></label>
+                        <input type="date" name="dateNacimiento" id="dateNacimiento" required>
+                    </div>
+
+                    <div class="persona">
+                        <input type="radio" name="radioPersona" id="radioEntrenador">
+                        <label for="radioEntrenador"><b>Entrenador</b></label>
+
+                        <input type="radio" name="radioPersona" id="radioJugador" checked>
+                        <label for="radioJugador"><b>Jugador</b></label>
+                    </div>
+
+                    <div class="seleccionJugador" id="seccionPosicion">
+                        <label for="txtPosicion"><b>Posición</b></label>
+                        <div class="posicion">
+                            <select name="txtPosicion" id="txtPosicion">
+                                <option value="posicionDefensa">Defensa</option>
+                                <option value="posicionDelantero">Delantero</option>
+                                <option value="posicionMedioCampista">Medio Campista</option>
+                                <option value="posicionPortero">Portero</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="registrar">
+                        <button type="submit">Registrar</button>
+                    </div>
+                    
+                    <div class="nombre">
+                        <label for="selectEquip"><b>Equip</b></label>
+                        <select name="selectEquip" id="selectEquip" required>
+                            <option value="" disabled selected>Selecciona un equip...</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+
+        <div class=logoFooter>
+            <a href="../paginasHTML/paginaPrincipal.html">
+                <img src="../logo/logoDorado.png" alt="error">
+            </a>
+        </div>
+
+        <h2>Football <br>Manager</h2>
+        <div class="footerLegales">
+            <a>Aviso Legal</a>
+            <a>Términos y Condiciones</a>
+        </div>
+
+        <div class=footerRedes>
+            <img src="../logo/ig.png" alt="instagram">
+            <img src="../logo/fb.png" alt="facebook">
+        </div>
+
+    </footer>
+
+    <script src="../archivosJavaScript/formulario.js"></script>
+</body>
+
+</html>

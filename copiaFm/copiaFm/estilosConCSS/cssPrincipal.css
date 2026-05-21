@@ -1,0 +1,931 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'UbuntuRegular';
+    src: url('Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LexendVariable';
+    src: url('Lexend/Lexend-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav {
+    display: flex;
+    background-color: rgb(0, 77, 152);
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    font-family: 'UbuntuRegular';
+    color: white;
+    justify-content: space-evenly;
+}
+
+nav h2 {
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 25px;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 9;
+}
+
+.enlaces h4 a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.enlaces h4 a:hover {
+    color: #E4D491;
+}
+
+
+
+footer {
+    display: flex;
+    background-color: rgb(0, 77, 152);
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-right: 0;
+    font-family: 'UbuntuRegular';
+    color: white;
+}
+
+footer h2 {
+    flex-grow: 1;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.logoFooter {
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.logoFooter img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.footerRedes {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    flex-grow: 1;
+}
+
+.footerRedes img {
+    width: 40px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.footerRedes>* {
+    margin-right: 10px;
+}
+
+.footerLegales a {
+    color: rgba(255, 255, 255, 0.8);
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+.footerLegales a:hover {
+    color: #E4D491;
+}
+
+/* paginaPrincipal.html*/
+figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+}
+
+
+.cajaPrincipal {
+    width: auto;
+    font-family: 'UbuntuRegular';
+    padding: 15px 30px;
+    margin: 10px 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.cajaPrincipal h1 {
+    text-align: center;
+    color: hsl(26, 100%, 44%);
+    font-family: 'UbuntuRegular';
+    font-size: 3rem;
+    margin: 10px 0;
+    padding-bottom: 15px;
+}
+
+article {
+    margin: 0;
+    padding: 0;
+}
+
+.articleConteiner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.imagenProxEnc {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.imagenProxEnc img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+article.vsConteiner {
+    width: 250px;
+    min-height: 300px;
+    height: auto;
+    margin: 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+article.vsConteiner:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+article.vsConteiner p {
+    padding: 8px 12px;
+    color: #333;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+article.vsConteiner p:first-of-type {
+    padding-top: 12px;
+}
+
+.disputas {
+    background-color: rgb(0, 77, 152);
+    border-radius: 13px 13px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    color: white;
+    gap: 5px;
+    height: 130px;
+    box-sizing: border-box;
+}
+
+.disputas img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.equipo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.82rem;
+    width: 80px;
+    gap: 6px;
+}
+
+.vs-img {
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 0.85;
+}
+
+/* ── CARD NOTICIA ── */
+article.vsConteinerNoticias {
+    width: 300px;
+    height: auto;
+    min-height: 300px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article.vsConteinerNoticias:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+article.vsConteinerNoticias p {
+    padding: 12px 15px;
+    color: #333;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+article.vsConteinerNoticias p b {
+    display: block;
+    margin-bottom: 6px;
+    color: hsl(26, 100%, 44%);
+    font-size: 0.95rem;
+}
+
+/* ── IMAGEN NOTICIA ── */
+.noticiaEntrenamiento {
+    width: 100%;
+}
+
+.noticiaEntrenamiento img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 13px 13px 0 0;
+    display: block;
+}
+/* PARTIDOS DISPUTADOS — partidosDisputados.html */
+
+main h1 {
+    text-align: center;
+    color: hsl(26, 100%, 44%);
+    font-family: 'UbuntuRegular';
+    font-size: 3rem;
+}
+
+.partidosContenedorPrincipal {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.encuentros {
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 600px;
+    background-color: #E4D491;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacionFecha {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    width: 500px;
+}
+
+.fechaTexto {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'LexendVariable';
+}
+
+.disputaVersus {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.encuentros .equipo {
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.encuentros .equipo img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.encuentros .equipo h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #333;
+    font-family: 'LexendVariable';
+}
+
+.resultadoFinal {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'LexendVariable';
+    border-radius: 12px 12px 0 0;
+    border-bottom: 9px solid #C30F03;
+}
+
+.resultadoFinal span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #004d98;
+    background-color: #f0f4f8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 45px;
+    letter-spacing: 2px;
+    border-radius: 12px;
+}
+
+/*equipos.html*/
+
+.main-container {
+    margin: 20px;
+    padding-top: 20px;
+    width: 100%;
+    min-height: 1200px;
+}
+
+.control-group {
+    margin-left: 40px;
+}
+
+.control-group label {
+    margin: 10px;
+    color: hsl(26, 100%, 44%);
+    font-family: 'UbuntuRegular';
+    font-size: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 600px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipo-card {
+    border-radius: 22px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.equipo-card:hover {
+    transform: translateY(-5px);
+}
+
+.header-equipo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #C30F03;
+    padding-bottom: 10px;
+    color: hsl(26, 100%, 44%);
+    font-family: 'UbuntuRegular';
+}
+
+.escut-club {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.lista-jugadores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jugador-item {
+    display: flex;
+    align-items: center;
+    background: #E6EDF5;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 2px solid #004D98;
+    object-fit: cover;
+    margin-right: 15px;
+    background: #e0e0e0;
+}
+
+.info-jugador {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding-bottom: 10px;
+    font-family: 'LexendVariable';
+    font-size: 1.2rem;
+}
+
+.dorsal {
+    font-family: 'LexendVariable';
+    color: black;
+    font-size: 1.2rem;
+}
+
+.entrenador-info {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: rgba(228, 212, 145, 0.3);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fce4ec;
+}
+
+.entrenador-info h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* tablaClasificaciones.html*/
+
+.titulo h1 {
+    color: hsl(26, 100%, 44%);
+    font-family: 'UbuntuRegular';
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+}
+
+.columnaTabla {
+    flex: 1;
+    min-width: 0;
+}
+
+.contenedorTabla {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 40px 30px 40px;
+    width: 100%;
+}
+
+.tabla-posiciones {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'LexendVariable';
+    font-size: 0.95rem;
+}
+
+.tabla-posiciones thead tr {
+    background-color: rgb(0, 77, 152);
+    color: white;
+}
+
+.tabla-posiciones thead th {
+    padding: 12px 14px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tabla-posiciones thead th:nth-child(2) {
+    text-align: left;
+}
+
+.tabla-posiciones tbody tr {
+    border-bottom: 1px solid #eae3e3;
+    transition: background-color 0.2s;
+}
+
+.tabla-posiciones tbody tr:hover {
+    background-color: #f0f4f8;
+}
+
+.tabla-posiciones tbody td {
+    padding: 11px 14px;
+    text-align: center;
+    color: #333;
+}
+
+.td-equipo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left !important;
+    font-weight: bold;
+}
+
+.escudo-tabla {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.td-pts {
+    font-weight: 900;
+    color: rgb(0, 77, 152);
+}
+
+.maximoGoleador {
+    flex-shrink: 0;
+    width: 350px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-family: 'LexendVariable';
+}
+
+.maximoGoleador h2 {
+    color: #004d98;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #fbc02d;
+    padding-bottom: 8px;
+}
+
+.fila-goleador {
+    display: flex;
+    align-items: center;
+    padding: 12px 5px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.fila-goleador:hover {
+    background-color: #f8f9fa;
+}
+
+.img-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #004d98;
+    flex-shrink: 0;
+}
+
+.info-jugadora {
+    flex-grow: 1;
+    margin-left: 12px;
+}
+
+.nombre-jugadora {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.detalles-equipo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 3px;
+}
+
+.escudo-miniatura {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.goles-count {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #004d98;
+    background: #f0f4f8;
+    padding: 5px 10px;
+    border-radius: 6px;
+    min-width: 48px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/*Formulario.html */
+
+main.formulario-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+main.formulario-main form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloFormulario {
+    text-align: center;
+    color: hsl(26, 100%, 44%);
+    font-family: 'UbuntuRegular';
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 20px 0 10px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorFormulario {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 800px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.ingresarFotoContenedor {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    width: 250px;
+    min-height: 300px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.ingresarFotoContenedor label {
+    margin-top: 10px;
+    color: black;
+}
+
+.cuadroFoto {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: rgba(228, 212, 145, 0.3);
+    border: 2px dashed #E4D491;
+    border-radius: 10px;
+}
+
+.cuadroFoto input[type="file"] {
+    display: none;
+}
+
+.InformacionCaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InformacionCaja span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    color: #666;
+    font-family: 'LexendVariable';
+}
+
+.camaraImagen {
+    padding-top: 10px;
+    width: 40px;
+    opacity: 0.6;
+}
+
+.imagenMostrada {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tipoFotoPreferente {
+    font-size: 0.75rem;
+    color: #666;
+    line-height: 1.4;
+    font-family: 'LexendVariable';
+}
+
+.contenedorDatos {
+    margin-left: 10px;
+    padding: 20px 30px;
+    flex-grow: 8;
+    font-family: 'LexendVariable';
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.contenedorDatos h4 {
+    font-family: 'UbuntuRegular';
+}
+
+.contenedorDatos input {
+    padding: 10px;
+    width: 400px;
+    background-color: rgba(228, 212, 145, 0.3);
+    border-radius: 5px;
+}
+
+.nombre {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre label {
+    padding: 10px;
+}
+
+.persona {
+    margin: 20px 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    background-color: #e0e0f0;
+    border-radius: 10px;
+}
+
+.persona input[type="radio"] {
+    display: none;
+}
+
+.persona label {
+    margin: 0;
+    padding: 10px 0;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    color: #333;
+}
+
+.persona input[type="radio"]:checked+label {
+    background-color: rgb(0, 77, 152);
+    color: white;
+    border-radius: 8px;
+}
+
+.seleccionJugador {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.posicion input {
+    padding-top: 10px;
+    display: flex;
+}
+
+.posicion select {
+    margin-top: 10px;
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registrar button {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    background-color: rgb(0, 77, 152);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+section {
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+#selectEquipo,
+#selectEquip {
+    margin-top: 10px;
+    padding: 10px;
+    width: 400px;
+    background-color: rgba(228, 212, 145, 0.3);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'LexendVariable';
+}
